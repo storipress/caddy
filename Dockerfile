@@ -12,4 +12,5 @@ RUN apk add --no-cache \
     python3 \
     py3-pip
 
-RUN pip install redis sentry-sdk
+RUN pip install redis sentry-sdk && \
+    pip install supervisor
